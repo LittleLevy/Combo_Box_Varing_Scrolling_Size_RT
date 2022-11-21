@@ -88,7 +88,7 @@ Children:
     - Name: Model
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"2133864822dd7e12576ee3984adc1077","Namespace":7}
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
       Children:
       - Name: ItemKind
         Type: PropertyType
@@ -98,6 +98,10 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../IncrementVariable@NodeId"
     - Name: SelectedValue
       Type: BaseDataVariableType
       DataType: BaseDataType
@@ -151,22 +155,8 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
-    - Name: Query
-      Type: BaseDataVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: "SELECT * FROM Table1 ORDER BY Timestamp"
-    - Name: DisplayValuePath
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Item}/VarIncrement"
-  - Name: IncrementVariable
-    Type: NetLogic
+    - Name: IncrementVariable
+      Type: NetLogic
   - Name: ClearAllButton
     Type: Button
     Children:
