@@ -165,3 +165,5 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Item}/VarIncrement"
+  - Name: IncrementVariable
+    Type: NetLogic
